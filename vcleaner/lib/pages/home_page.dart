@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:vcleaner/pages/video_page.dart';
 import 'package:vcleaner/utils/features_box.dart';
 
 
@@ -62,10 +63,15 @@ class _HomePageState extends State<HomePage> {
                     height: 45,
                     color: Colors.grey[800],),
               
-                  Icon(
-                    Icons.person,
-                    size: 45,
-                    color: Colors.grey[800],)
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => VideoPage()));
+                    },
+                    child: Icon(
+                      Icons.video_camera_back,
+                      size: 60,
+                      color: Colors.grey[800],),
+                  )
                 ],
               ),
             ),

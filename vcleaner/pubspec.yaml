@@ -28,6 +28,8 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  video_player: ^2.8.1
+  chewie: ^1.7.4
   flutter:
     sdk: flutter
 
