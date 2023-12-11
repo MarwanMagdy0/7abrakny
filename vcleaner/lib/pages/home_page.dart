@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:vcleaner/pages/video_page.dart';
-import 'package:vcleaner/utils/features_box.dart';
+import 'package:Rotom/pages/video_page.dart';
+import 'package:Rotom/utils/features_box.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -54,14 +54,14 @@ class _HomePageState extends State<HomePage> {
         
             //custom AppBar
             Padding(
-              padding: EdgeInsets.symmetric(horizontal:horizontalPadding, vertical: 10),
+              padding: EdgeInsets.symmetric(horizontal:horizontalPadding-15, vertical: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Image.asset(
-                    'lib/icons/menu.png',
-                    height: 45,
-                    color: Colors.grey[800],),
+                    'lib/icons/rotom.png',
+                    height: 60,
+                    ),
               
                   GestureDetector(
                     onTap: () {
@@ -86,8 +86,8 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Welcome To', style: TextStyle(fontSize: 20,color: Colors.grey[700] ),),
-                  Text('vCleaner', style: GoogleFonts.bebasNeue(fontSize: 72, ),),
+                  Text('Welcome To', style: TextStyle(fontSize: 20,color: Colors.grey[700], fontWeight: FontWeight.bold ),),
+                  Text('Rotom', style: GoogleFonts.orbitron(fontSize: 60),),
                 ],
               ),
             ),
@@ -109,7 +109,7 @@ class _HomePageState extends State<HomePage> {
               left: horizontalPadding,
               right:horizontalPadding,
               top: verticalPadding),
-            child: Text('Features', style: TextStyle(fontSize: 24,fontStyle: FontStyle.italic,fontWeight: FontWeight.bold, color: Colors.grey[800]),),
+            child: Text('Features', style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold, color: Colors.grey[800]),),
           ),
 
 
